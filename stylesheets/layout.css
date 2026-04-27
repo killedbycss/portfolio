@@ -19,7 +19,7 @@ html {
 
 @media (prefers-color-scheme: light) {
   body {
-  background-color: var(--bg-light);
+    background-color: var(--bg-light);
   }
 }
 
@@ -31,7 +31,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
   body {
-  background-color: var(--bg-dark);
+    background-color: var(--bg-dark);
   }
 }
 
@@ -45,31 +45,30 @@ html {
 /* Светлая тема */
 
 :root {
+  --tag-bg-lazure-light: #00c4ff50;
+  --tag-lazure-light: #00769a;
 
-  --tag-bg-lazure-light: #00C4FF50;
-  --tag-lazure-light: #00769A;
-  
-  --tag-bg-blue-light: #0077FF50;
-  --tag-blue-light: #005DC5;
+  --tag-bg-blue-light: #0077ff50;
+  --tag-blue-light: #005dc5;
 
-  --tag-bg-yellow-light: #FFAA0050;
+  --tag-bg-yellow-light: #ffaa0050;
   --tag-yellow-light: #946300;
 
-  --tag-bg-orange-light: #FF730050;
-  --tag-orange-light: #A84E00;
+  --tag-bg-orange-light: #ff730050;
+  --tag-orange-light: #a84e00;
 }
 
 /* Шрифты */
 
 body {
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
 h1 {
   font-size: 3.125vw;
   width: 100%;
-  color: var(--text-light)
+  color: var(--text-light);
 }
 
 #description span {
@@ -82,7 +81,7 @@ h2 {
 
 .tag {
   font-size: 1.25vw;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
@@ -107,9 +106,11 @@ p {
   display: flex;
   flex-direction: column;
   width: 50vw;
+  padding: 4.5vw;
+  padding-left: 0;
 }
 
-.textDesc {
+.miniContents {
   display: flex;
   flex-direction: column;
   gap: 2.083vw;
