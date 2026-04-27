@@ -7,9 +7,9 @@
   const pageLang = document.documentElement.lang.toLowerCase()
 
   if (userLang === 'ru' && pageLang !== 'ru') {
-    window.location.href = 'indexRu.html'
+    window.location.href = '../indexRu.html'
   } else if (userLang === 'en' && pageLang !== 'en') {
-    window.location.href = 'index.html'
+    window.location.href = '../index.html'
   }
 })()
 
