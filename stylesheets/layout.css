@@ -47,7 +47,7 @@ html {
   --span-dark: #ffffff7b;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: var(--bg-dark);
   }
@@ -126,7 +126,7 @@ html {
   --tag-orange-dark: #ffad69;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   #tg {
     color: var(--tag-lazure-dark);
     background-color: var(--tag-bg-lazure-dark);
