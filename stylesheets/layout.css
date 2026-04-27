@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 html {
   scroll-behavior: smooth;
@@ -33,20 +34,20 @@ html {
   }
 
   ::selection {
-    color: var(--tag-orange-light);
-    background-color: var(--tag-bg-orange-light);
+    color: var(--bg-light);
+    background-color: var(--text-light);
   }
 }
 
 /* Темная тема */
 
 :root {
-  --bg-dark: #000;
-  --text-dark: #fff;
+  --bg-dark: #111111;
+  --text-dark: #f1f1f1;
   --span-dark: #ffffff7b;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
     background-color: var(--bg-dark);
   }
@@ -62,8 +63,8 @@ html {
   }
 
   ::selection {
-    color: var(--tag-orange-dark);
-    background-color: var(--tag-bg-orange-dark);
+    color: var(--bg-dark);
+    background-color: var(--text-dark);
   }
 }
 
@@ -96,7 +97,8 @@ html {
     background-color: var(--tag-bg-blue-light);
   }
 
-  #em {
+  #em,
+  #emEn {
     color: var(--tag-yellow-light);
     background-color: var(--tag-bg-yellow-light);
   }
@@ -124,7 +126,7 @@ html {
   --tag-orange-dark: #ffad69;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   #tg {
     color: var(--tag-lazure-dark);
     background-color: var(--tag-bg-lazure-dark);
@@ -135,7 +137,8 @@ html {
     background-color: var(--tag-bg-blue-dark);
   }
 
-  #em {
+  #em,
+  #emEn {
     color: var(--tag-yellow-dark);
     background-color: var(--tag-bg-yellow-dark);
   }

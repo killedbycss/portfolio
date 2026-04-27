@@ -1,12 +1,12 @@
-sendEmail()
+sendEmailEn()
 
-function sendEmail() {
-  let emButton = document.querySelector('#em')
+function sendEmailEn() {
+  let emEnButton = document.querySelector('#emEn')
 
-  emButton.addEventListener('click', () => {
+  emEnButton.addEventListener('click', () => {
     const email = 'taras.balabaev@gmail.com'
-    const subject = encodeURIComponent('Пришел к вам с сайта')
-    const body = encodeURIComponent('Здравствуйте! Хотел бы связаться с вами')
+    const subject = encodeURIComponent('Went to you from site')
+    const body = encodeURIComponent('Hello! I would to contact with you')
 
     window.location.href = `mailto:${email}?subject=${subject}&body=${body}`
   })
@@ -21,9 +21,9 @@ function sendEmail() {
   const pageLang = document.documentElement.lang.toLowerCase()
 
   if (userLang === 'ru' && pageLang !== 'ru') {
-    window.location.href = 'indexRu.html'
+    window.location.href = '../indexRu.html'
   } else if (userLang === 'en' && pageLang !== 'en') {
-    window.location.href = 'index.html'
+    window.location.href = '../index.html'
   }
 })()
 
