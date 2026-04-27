@@ -1,0 +1,154 @@
+/* Базовая информация */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Цвета */
+
+/* Светлая тема */
+
+:root {
+  --bg-light: #fff;
+  --text-light: #000;
+  --span-light: #0000007b;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+  background-color: var(--bg-light);
+  }
+}
+
+/* Темная тема */
+
+:root {
+  --bg-dark: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+  background-color: var(--bg-dark);
+  }
+}
+
+::selection {
+  color: white;
+  background-color: black;
+}
+
+/* Теги */
+
+/* Светлая тема */
+
+:root {
+
+  --tag-bg-lazure-light: #00C4FF50;
+  --tag-lazure-light: #00769A;
+  
+  --tag-bg-blue-light: #0077FF50;
+  --tag-blue-light: #005DC5;
+
+  --tag-bg-yellow-light: #FFAA0050;
+  --tag-yellow-light: #946300;
+
+  --tag-bg-orange-light: #FF730050;
+  --tag-orange-light: #A84E00;
+}
+
+/* Шрифты */
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 3.125vw;
+  width: 100%;
+  color: var(--text-light)
+}
+
+#description span {
+  color: var(--span-light);
+}
+
+h2 {
+  font-size: 2.083vw;
+}
+
+.tag {
+  font-size: 1.25vw;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1.5625vw;
+  font-weight: 400;
+  line-height: 110%;
+}
+
+/* Основные секции */
+
+#description {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  padding: 4.5vw;
+  gap: 3.125vw;
+  height: 100%;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+}
+
+.textDesc {
+  display: flex;
+  flex-direction: column;
+  gap: 2.083vw;
+}
+
+/* Теги */
+
+.tag {
+  border: none;
+  padding: 1.041vw;
+  border-radius: 1.041vw;
+  cursor: pointer;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  row-gap: 1.3vw;
+  justify-content: space-between;
+}
+
+#tg {
+  color: var(--tag-lazure-light);
+  background-color: var(--tag-bg-lazure-light);
+}
+
+#vk {
+  color: var(--tag-blue-light);
+  background-color: var(--tag-bg-blue-light);
+}
+
+#em {
+  color: var(--tag-yellow-light);
+  background-color: var(--tag-bg-yellow-light);
+}
+
+#mr {
+  color: var(--tag-orange-light);
+  background-color: var(--tag-bg-orange-light);
+  width: 100%;
+}
