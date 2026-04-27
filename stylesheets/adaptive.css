@@ -58,11 +58,40 @@
     font-size: 4.083vw;
   }
 
+  h3 {
+    font-size: 3.7vw;
+  }
+
   .tag {
     font-size: 3.25vw;
   }
 
   p {
     font-size: 3.5625vw;
+  }
+
+  #mr {
+    width: auto;
+  }
+
+  .projectImage {
+    width: 27.5vw;
+    height: 27.5vw;
+    border-radius: 1.2vw;
+  }
+
+  .projectIcon {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .project {
+    padding: 3vw;
+    gap: 3vw;
+    border-radius: 3vw;
+  }
+
+  .iconText {
+    gap: 2vw;
   }
 }

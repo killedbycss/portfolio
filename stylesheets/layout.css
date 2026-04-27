@@ -25,6 +25,7 @@ html {
 
   h1,
   h2,
+  h3,
   p {
     color: var(--text-light);
   }
@@ -54,6 +55,7 @@ html {
 
   h1,
   h2,
+  h3,
   p {
     color: var(--text-dark);
   }
@@ -166,6 +168,10 @@ h2 {
   font-size: 2.083vw;
 }
 
+h3 {
+  font-size: 1.7vw;
+}
+
 .tag {
   font-size: 1.25vw;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
@@ -227,4 +233,47 @@ p {
   width: 90%;
   row-gap: 1.3vw;
   justify-content: space-between;
+}
+
+/* Проекты */
+
+.project {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.4vw;
+  border-radius: 1.2vw;
+  gap: 1.4vw;
+  background-color: #ffffff29;
+}
+
+.projectIcon {
+  width: 3.125vw;
+  height: 3.125vw;
+  border-radius: 0.6vw;
+  background-color: var(--span-dark);
+}
+
+.iconText {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+.aboutProject {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectImage {
+  width: 13.5vw;
+  height: 13.5vw;
+  background-color: var(--span-dark);
+  border-radius: 0.6vw;
+}
+
+#open {
+  padding: 0.78vw;
 }
