@@ -1,11 +1,68 @@
 .contents {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 @media screen and (max-width: 1100px) {
-    .contents {
-        display: flex;
-        flex-direction: column;
-    }
+  .contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5.125vw;
+  }
+
+  #waste {
+    display: none;
+  }
+
+  #description,
+  #projects {
+    width: 100vw;
+  }
+
+  #description {
+    position: relative;
+    gap: 6.125vw;
+    padding-bottom: 0;
+  }
+
+  #projects {
+    padding: 4.5vw;
+    padding-top: 0;
+  }
+
+  .miniContents {
+    gap: 5.083vw;
+  }
+
+  .tag {
+    padding: 1.5vw;
+  }
+
+  .tags {
+    width: 100%;
+    row-gap: 2vw;
+  }
+
+  #sort,
+  #social {
+    gap: 2vw;
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 7.125vw;
+  }
+
+  h2 {
+    font-size: 4.083vw;
+  }
+
+  .tag {
+    font-size: 3.25vw;
+  }
+
+  p {
+    font-size: 3.5625vw;
+  }
 }

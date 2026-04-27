@@ -21,23 +21,50 @@ html {
   body {
     background-color: var(--bg-light);
   }
+
+  h1,
+  h2,
+  p {
+    color: var(--text-light);
+  }
+
+  #description span {
+    color: var(--span-light);
+  }
+
+  ::selection {
+    color: var(--tag-orange-light);
+    background-color: var(--tag-bg-orange-light);
+  }
 }
 
 /* Темная тема */
 
 :root {
   --bg-dark: #000;
+  --text-dark: #fff;
+  --span-dark: #ffffff7b;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--bg-dark);
   }
-}
 
-::selection {
-  color: white;
-  background-color: black;
+  h1,
+  h2,
+  p {
+    color: var(--text-dark);
+  }
+
+  #description span {
+    color: var(--span-dark);
+  }
+
+  ::selection {
+    color: var(--tag-orange-dark);
+    background-color: var(--tag-bg-orange-dark);
+  }
 }
 
 /* Теги */
@@ -58,6 +85,68 @@ html {
   --tag-orange-light: #a84e00;
 }
 
+@media (prefers-color-scheme: light) {
+  #tg {
+    color: var(--tag-lazure-light);
+    background-color: var(--tag-bg-lazure-light);
+  }
+
+  #vk {
+    color: var(--tag-blue-light);
+    background-color: var(--tag-bg-blue-light);
+  }
+
+  #em {
+    color: var(--tag-yellow-light);
+    background-color: var(--tag-bg-yellow-light);
+  }
+
+  #mr {
+    color: var(--tag-orange-light);
+    background-color: var(--tag-bg-orange-light);
+    width: 100%;
+  }
+}
+
+/* Темная тема */
+
+:root {
+  --tag-bg-lazure-dark: #00c4ff7b;
+  --tag-lazure-dark: #79e0ff;
+
+  --tag-bg-blue-dark: #0077ff7b;
+  --tag-blue-dark: #62acff;
+
+  --tag-bg-yellow-dark: #ffaa007b;
+  --tag-yellow-dark: #ffd175;
+
+  --tag-bg-orange-dark: #ff73007b;
+  --tag-orange-dark: #ffad69;
+}
+
+@media (prefers-color-scheme: dark) {
+  #tg {
+    color: var(--tag-lazure-dark);
+    background-color: var(--tag-bg-lazure-dark);
+  }
+
+  #vk {
+    color: var(--tag-blue-dark);
+    background-color: var(--tag-bg-blue-dark);
+  }
+
+  #em {
+    color: var(--tag-yellow-dark);
+    background-color: var(--tag-bg-yellow-dark);
+  }
+
+  #mr {
+    color: var(--tag-orange-dark);
+    background-color: var(--tag-bg-orange-dark);
+    width: 100%;
+  }
+}
+
 /* Шрифты */
 
 body {
@@ -68,11 +157,6 @@ body {
 h1 {
   font-size: 3.125vw;
   width: 100%;
-  color: var(--text-light);
-}
-
-#description span {
-  color: var(--span-light);
 }
 
 h2 {
@@ -98,6 +182,7 @@ p {
 /* Основные секции */
 
 #description {
+  position: fixed;
   display: flex;
   flex-direction: column;
   width: 50vw;
@@ -112,6 +197,10 @@ p {
   width: 50vw;
   padding: 4.5vw;
   padding-left: 0;
+}
+
+#waste {
+  width: 50vw;
 }
 
 .miniContents {
@@ -135,25 +224,4 @@ p {
   width: 90%;
   row-gap: 1.3vw;
   justify-content: space-between;
-}
-
-#tg {
-  color: var(--tag-lazure-light);
-  background-color: var(--tag-bg-lazure-light);
-}
-
-#vk {
-  color: var(--tag-blue-light);
-  background-color: var(--tag-bg-blue-light);
-}
-
-#em {
-  color: var(--tag-yellow-light);
-  background-color: var(--tag-bg-yellow-light);
-}
-
-#mr {
-  color: var(--tag-orange-light);
-  background-color: var(--tag-bg-orange-light);
-  width: 100%;
 }
