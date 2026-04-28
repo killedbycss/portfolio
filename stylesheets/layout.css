@@ -13,94 +13,87 @@ html {
 /* Светлая тема */
 
 :root {
-  --bg-light: #fff;
-  --text-light: #000;
-  --span-light: #0000007b;
-  --button-light: #eaeaea;
+  --light-bg: #fff;
+  --light-text: #000;
+  --light-span: #0000007b;
+  --light-button: #eaeaea;
 }
 
 @media (prefers-color-scheme: light) {
   body {
-    background-color: var(--bg-light);
+    background-color: var(--light-bg);
   }
 
   h1,
   h2,
   h3,
   p {
-    color: var(--text-light);
-  }
-
-  #description span {
-    color: var(--span-light);
+    color: var(--light-text);
   }
 
   .tag {
-    background-color: var(--button-light);
-    color: var(--span-light);
+    background-color: var(--light-button);
+    color: var(--light-span);
   }
 
   .projectIcon,
   .projectImage {
-    background-color: var(--span-light);
+    background-color: var(--light-span);
   }
 
   .project {
-    background-color: var(--button-light);
+    /* background-color: var(--button-light); */
     transition: ease-in 0.2s;
     cursor: pointer;
   }
 
   .project:hover {
     background-color: var(--tag-yellow-dark);
-    color: var(--text-light);
+    color: var(--light-bg);
     transition: ease-in 0.2s;
+    padding: 1.4vw;
   }
 
   ::selection {
-    color: var(--bg-light);
-    background-color: var(--text-light);
+    color: var(--light-bg);
+    background-color: var(--light-text);
   }
 }
 
 /* Темная тема */
 
 :root {
-  --bg-dark: #111111;
-  --text-dark: #f1f1f1;
-  --span-dark: #ffffff7b;
-  --button-dark: #252525;
+  --dark-bg: #111111;
+  --dark-text: #f1f1f1;
+  --dark-span: #ffffff7b;
+  --dark-button: #252525;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: var(--bg-dark);
+    background-color: var(--dark-bg);
   }
 
   h1,
   h2,
   h3,
   p {
-    color: var(--text-dark);
-  }
-
-  #description span {
-    color: var(--span-dark);
+    color: var(--dark-text);
   }
 
   .projectIcon,
   .projectImage {
-    background-color: var(--span-dark);
+    background-color: var(--dark-span);
   }
 
   .tag {
-    background-color: var(--button-dark);
-    color: var(--span-dark);
+    background-color: var(--dark-button);
+    color: var(--dark-span);
   }
 
   ::selection {
-    color: var(--bg-dark);
-    background-color: var(--text-dark);
+    color: var(--dark-bg);
+    background-color: var(--dark-text);
   }
 }
 
@@ -109,68 +102,68 @@ html {
 /* Светлая тема */
 
 :root {
-  --tag-bg-lazure-light: #00c4ff50;
-  --tag-lazure-light: #00769a;
+  --tlight-bg-lazure: #00c4ff50;
+  --tlight-lazure: #00769a;
 
-  --tag-bg-blue-light: #0077ff50;
-  --tag-blue-light: #005dc5;
+  --tlight-bg-blue: #0077ff50;
+  --tlight-blue: #005dc5;
 
-  --tag-bg-yellow-light: #ffaa0050;
-  --tag-yellow-light: #946300;
+  --tlight-bg-yellow: #ffaa0050;
+  --tlight-yellow: #946300;
 
-  --tag-bg-orange-light: #ff730050;
-  --tag-orange-light: #a84e00;
+  --tlight-bg-orange: #ff730050;
+  --tlight-orange: #a84e00;
 }
 
 @media (prefers-color-scheme: light) {
   #tg {
-    color: var(--tag-lazure-light);
-    background-color: var(--tag-bg-lazure-light);
+    color: var(--tlight-lazure);
+    background-color: var(-tlight--bg-lazght);
     transition: ease-in 0.2s;
   }
 
   #vk {
-    color: var(--tag-blue-light);
-    background-color: var(--tag-bg-blue-light);
+    color: var(--tlight-blue);
+    background-color: var(--tlight-bg-blue);
     transition: ease-in 0.2s;
   }
 
   #em,
   #emEn {
-    color: var(--tag-yellow-light);
-    background-color: var(--tag-bg-yellow-light);
+    color: var(--tlight-yellow);
+    background-color: var(--tagtlight-yellow);
     transition: ease-in 0.2s;
   }
 
   #mr {
-    color: var(--tag-orange-light);
-    background-color: var(--tag-bg-orange-light);
+    color: var(--tlight-orange);
+    background-color: var(--tlight-bg-oranht);
     transition: ease-in 0.2s;
     width: 100%;
   }
 
   #tg:hover {
     color: var(--bg-light);
-    background-color: var(--tag-lazure-light);
+    background-color: var(--tlight-lazure);
     transition: ease-in 0.2s;
   }
 
   #vk:hover {
     color: var(--bg-light);
-    background-color: var(--tag-blue-light);
+    background-color: var(--tlight-blue-light);
     transition: ease-in 0.2s;
   }
 
   #em:hover,
   #emEn:hover {
     color: var(--bg-light);
-    background-color: var(--tag-yellow-light);
+    background-color: var(--tlight-yellow);
     transition: ease-in 0.2s;
   }
 
   #mr:hover {
     color: var(--bg-light);
-    background-color: var(--tag-orange-light);
+    background-color: var(--tlight-orange);
     transition: ease-in 0.2s;
     width: 100%;
   }
@@ -179,67 +172,87 @@ html {
 /* Темная тема */
 
 :root {
-  --tag-bg-lazure-dark: #00c4ff7b;
-  --tag-lazure-dark: #79e0ff;
+  --tdark-bg-lazure: #00c4ff7b;
+  --tdark-lazure: #79e0ff;
 
-  --tag-bg-blue-dark: #0077ff7b;
-  --tag-blue-dark: #62acff;
+  --tdark-bg-blue: #0077ff7b;
+  --tdark-blue: #62acff;
 
-  --tag-bg-yellow-dark: #ffaa007b;
-  --tag-yellow-dark: #ffd175;
+  --tdark-bg-yellow: #ffaa007b;
+  --tdark-yellow: #ffd175;
 
-  --tag-bg-orange-dark: #ff73007b;
-  --tag-orange-dark: #ffad69;
+  --tdark-bg-orange: #ff73007b;
+  --tdark-orange: #ffad69;
 }
 
 @media (prefers-color-scheme: dark) {
   #tg {
-    color: var(--tag-lazure-dark);
-    background-color: var(--tag-bg-lazure-dark);
+    color: var(--tdark-lazure);
+    background-color: var(--tdark-bg-lazure);
   }
 
   #vk {
-    color: var(--tag-blue-dark);
-    background-color: var(--tag-bg-blue-dark);
+    color: var(--tdark-blue);
+    background-color: var(--tdark-bg-blue);
   }
 
   #em,
   #emEn {
-    color: var(--tag-yellow-dark);
-    background-color: var(--tag-bg-yellow-dark);
+    color: var(--tdark-yellow);
+    background-color: var(--tdark-bg-yellow);
   }
 
   #mr {
-    color: var(--tag-orange-dark);
-    background-color: var(--tag-bg-orange-dark);
+    color: var(--tdark-orange);
+    background-color: var(--tdark-bg-orange);
     width: 100%;
   }
 
   #tg:hover {
-    color: var(--text-dark);
-    background-color: var(--tag-lazure-light);
+    color: var(--dark-text);
+    background-color: var(--tlight-lazure);
     transition: ease-in 0.2s;
   }
 
   #vk:hover {
-    color: var(--text-dark);
-    background-color: var(--tag-blue-light);
+    color: var(--dark-text);
+    background-color: var(--tlight-blue);
     transition: ease-in 0.2s;
   }
 
   #em:hover,
   #emEn:hover {
-    color: var(--text-dark);
-    background-color: var(--tag-yellow-light);
+    color: var(--dark-text);
+    background-color: var(--tlight-yellow);
     transition: ease-in 0.2s;
   }
 
   #mr:hover {
-    color: var(--text-dark);
-    background-color: var(--tag-orange-light);
+    color: var(--dark-text);
+    background-color: var(--tlight-orange);
     transition: ease-in 0.2s;
     width: 100%;
   }
+}
+
+/* Проекты */
+
+:root {
+  --p-tbank: #5a47ca;
+  --p-gorkiy: #ff1c20;
+  --p-bimbook: #0a8754;
+}
+
+#tbank:hover {
+  background-color: var(--p-tbank);
+}
+
+#gorkiy:hover {
+  background-color: var(--p-gorkiy);
+}
+
+#bimbook:hover {
+  background-color: var(--p-bimbook);
 }
 
 /* Шрифты */
@@ -290,6 +303,19 @@ p {
   height: 100%;
 }
 
+#description span {
+  display: inline-block;
+  /* animation:
+    test 10s steps(5) infinite alternate,
+    blink 800ms steps(5) infinite normal; */
+  background-color: var(--dark-text);
+  color: var(--dark-bg);
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(0 100% 0 0);
+  animation: test 4s infinite linear;
+}
+
 #projects {
   display: flex;
   flex-direction: column;
@@ -331,9 +357,17 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 1.4vw;
+  padding: 1.4vw 0;
   border-radius: 1.2vw;
   gap: 1.4vw;
+  transition: ease-in-out 0.35s;
+  cursor: pointer;
+}
+
+.project:hover {
+  transition: ease-in-out 0.5s;
+  padding: 1.4vw;
+  color: var(--light-bg);
 }
 
 .projectIcon {

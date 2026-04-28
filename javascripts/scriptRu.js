@@ -1,5 +1,16 @@
 sendEmail()
 
+// Проекты
+tbank()
+
+function tbank() {
+  let tbankOpen = document.querySelector('#tbank')
+
+  tbankOpen.addEventListener('click', () => {
+    window.location.href = 'projectsRu/tbank.html'
+  })
+}
+
 function sendEmail() {
   let emButton = document.querySelector('#em')
 
