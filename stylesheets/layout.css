@@ -16,6 +16,7 @@ html {
   --bg-light: #fff;
   --text-light: #000;
   --span-light: #0000007b;
+  --button-light: #eaeaea;
 }
 
 @media (prefers-color-scheme: light) {
@@ -34,6 +35,28 @@ html {
     color: var(--span-light);
   }
 
+  .tag {
+    background-color: var(--button-light);
+    color: var(--span-light);
+  }
+
+  .projectIcon,
+  .projectImage {
+    background-color: var(--span-light);
+  }
+
+  .project {
+    background-color: var(--button-light);
+    transition: ease-in 0.2s;
+    cursor: pointer;
+  }
+
+  .project:hover {
+    background-color: var(--tag-yellow-dark);
+    color: var(--text-light);
+    transition: ease-in 0.2s;
+  }
+
   ::selection {
     color: var(--bg-light);
     background-color: var(--text-light);
@@ -46,6 +69,7 @@ html {
   --bg-dark: #111111;
   --text-dark: #f1f1f1;
   --span-dark: #ffffff7b;
+  --button-dark: #252525;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -61,6 +85,16 @@ html {
   }
 
   #description span {
+    color: var(--span-dark);
+  }
+
+  .projectIcon,
+  .projectImage {
+    background-color: var(--span-dark);
+  }
+
+  .tag {
+    background-color: var(--button-dark);
     color: var(--span-dark);
   }
 
@@ -92,22 +126,52 @@ html {
   #tg {
     color: var(--tag-lazure-light);
     background-color: var(--tag-bg-lazure-light);
+    transition: ease-in 0.2s;
   }
 
   #vk {
     color: var(--tag-blue-light);
     background-color: var(--tag-bg-blue-light);
+    transition: ease-in 0.2s;
   }
 
   #em,
   #emEn {
     color: var(--tag-yellow-light);
     background-color: var(--tag-bg-yellow-light);
+    transition: ease-in 0.2s;
   }
 
   #mr {
     color: var(--tag-orange-light);
     background-color: var(--tag-bg-orange-light);
+    transition: ease-in 0.2s;
+    width: 100%;
+  }
+
+  #tg:hover {
+    color: var(--bg-light);
+    background-color: var(--tag-lazure-light);
+    transition: ease-in 0.2s;
+  }
+
+  #vk:hover {
+    color: var(--bg-light);
+    background-color: var(--tag-blue-light);
+    transition: ease-in 0.2s;
+  }
+
+  #em:hover,
+  #emEn:hover {
+    color: var(--bg-light);
+    background-color: var(--tag-yellow-light);
+    transition: ease-in 0.2s;
+  }
+
+  #mr:hover {
+    color: var(--bg-light);
+    background-color: var(--tag-orange-light);
+    transition: ease-in 0.2s;
     width: 100%;
   }
 }
@@ -148,6 +212,32 @@ html {
   #mr {
     color: var(--tag-orange-dark);
     background-color: var(--tag-bg-orange-dark);
+    width: 100%;
+  }
+
+  #tg:hover {
+    color: var(--text-dark);
+    background-color: var(--tag-lazure-light);
+    transition: ease-in 0.2s;
+  }
+
+  #vk:hover {
+    color: var(--text-dark);
+    background-color: var(--tag-blue-light);
+    transition: ease-in 0.2s;
+  }
+
+  #em:hover,
+  #emEn:hover {
+    color: var(--text-dark);
+    background-color: var(--tag-yellow-light);
+    transition: ease-in 0.2s;
+  }
+
+  #mr:hover {
+    color: var(--text-dark);
+    background-color: var(--tag-orange-light);
+    transition: ease-in 0.2s;
     width: 100%;
   }
 }
@@ -231,8 +321,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
-  row-gap: 1.3vw;
-  justify-content: space-between;
+  gap: 0.5vw;
+  /* justify-content: space-between; */
 }
 
 /* Проекты */
@@ -244,14 +334,12 @@ p {
   padding: 1.4vw;
   border-radius: 1.2vw;
   gap: 1.4vw;
-  background-color: #ffffff29;
 }
 
 .projectIcon {
   width: 3.125vw;
   height: 3.125vw;
   border-radius: 0.6vw;
-  background-color: var(--span-dark);
 }
 
 .iconText {
@@ -270,10 +358,10 @@ p {
 .projectImage {
   width: 13.5vw;
   height: 13.5vw;
-  background-color: var(--span-dark);
   border-radius: 0.6vw;
 }
 
 #open {
   padding: 0.78vw;
+  border-radius: 0.6vw;
 }
