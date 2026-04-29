@@ -47,11 +47,14 @@ html {
     cursor: pointer;
   }
 
-  .project:hover {
-    background-color: var(--tag-yellow-dark);
+  .project:hover h3,
+  .project:hover p {
     color: var(--light-bg);
-    transition: ease-in 0.2s;
-    padding: 1.4vw;
+  }
+
+  #description span {
+    background-color: var(--light-text);
+    color: var(--light-bg);
   }
 
   ::selection {
@@ -91,6 +94,11 @@ html {
     color: var(--dark-span);
   }
 
+  #description span {
+    background-color: var(--dark-text);
+    color: var(--dark-bg);
+  }
+
   ::selection {
     color: var(--dark-bg);
     background-color: var(--dark-text);
@@ -118,7 +126,7 @@ html {
 @media (prefers-color-scheme: light) {
   #tg {
     color: var(--tlight-lazure);
-    background-color: var(-tlight--bg-lazght);
+    background-color: var(--tlight-bg-lazure);
     transition: ease-in 0.2s;
   }
 
@@ -131,38 +139,38 @@ html {
   #em,
   #emEn {
     color: var(--tlight-yellow);
-    background-color: var(--tagtlight-yellow);
+    background-color: var(--tlight-bg-yellow);
     transition: ease-in 0.2s;
   }
 
   #mr {
     color: var(--tlight-orange);
-    background-color: var(--tlight-bg-oranht);
+    background-color: var(--tlight-bg-orange);
     transition: ease-in 0.2s;
     width: 100%;
   }
 
   #tg:hover {
-    color: var(--bg-light);
+    color: var(--light-bg);
     background-color: var(--tlight-lazure);
     transition: ease-in 0.2s;
   }
 
   #vk:hover {
-    color: var(--bg-light);
-    background-color: var(--tlight-blue-light);
+    color: var(--light-bg);
+    background-color: var(--tlight-blue);
     transition: ease-in 0.2s;
   }
 
   #em:hover,
   #emEn:hover {
-    color: var(--bg-light);
+    color: var(--light-bg);
     background-color: var(--tlight-yellow);
     transition: ease-in 0.2s;
   }
 
   #mr:hover {
-    color: var(--bg-light);
+    color: var(--light-bg);
     background-color: var(--tlight-orange);
     transition: ease-in 0.2s;
     width: 100%;
@@ -287,8 +295,16 @@ p {
   line-height: 110%;
 }
 
-#comment {
-  opacity: 0.5;
+a {
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: var(--tlight-blue);
+  transition: ease-in-out 0.2s;
+}
+
+a:hover {
+  color: var(--tlight-lazure);
+  transition: ease-in-out 0.3s;
 }
 
 /* Основные секции */
@@ -308,8 +324,6 @@ p {
   /* animation:
     test 10s steps(5) infinite alternate,
     blink 800ms steps(5) infinite normal; */
-  background-color: var(--dark-text);
-  color: var(--dark-bg);
   overflow: hidden;
   white-space: nowrap;
   clip-path: inset(0 100% 0 0);
@@ -367,7 +381,6 @@ p {
 .project:hover {
   transition: ease-in-out 0.5s;
   padding: 1.4vw;
-  color: var(--light-bg);
 }
 
 .projectIcon {
@@ -398,4 +411,39 @@ p {
 #open {
   padding: 0.78vw;
   border-radius: 0.6vw;
+}
+
+/* Описание */
+
+.inProject {
+  display: flex;
+  flex-direction: column;
+  padding: 4vw 20vw;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3.125vw;
+}
+
+.titleInProject {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 4vw;
+}
+
+.titleInProject h1 {
+  width: 46vw;
+}
+
+.iconInProject {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 2vw;
+  background-color: var(--dark-button);
+}
+
+img {
+  width: 100%;
 }

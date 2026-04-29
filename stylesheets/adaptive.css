@@ -70,6 +70,10 @@
     font-size: 3.5625vw;
   }
 
+  a {
+    font-size: 3.7vw;
+  }
+
   #mr {
     width: auto;
   }
@@ -93,5 +97,25 @@
 
   .iconText {
     gap: 2vw;
+  }
+
+  .inProject {
+    padding: 14vw 4vw;
+    gap: 7vw;
+  }
+
+  .titleInProject {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .titleInProject h1 {
+    width: 100%;
+  }
+
+  .iconInProject {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 5vw;
   }
 }
