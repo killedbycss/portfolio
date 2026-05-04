@@ -27,7 +27,8 @@ html {
   h1,
   h2,
   h3,
-  p {
+  p,
+  li {
     color: var(--light-text);
   }
 
@@ -80,7 +81,8 @@ html {
   h1,
   h2,
   h3,
-  p {
+  p,
+  li {
     color: var(--dark-text);
   }
 
@@ -246,21 +248,76 @@ html {
 /* Проекты */
 
 :root {
+  --p-balanceway: #ffd400;
+  --p-foresight: #233ad1;
+  --p-dosug: #ff5500;
+  --p-bimbook: #0a8754;
   --p-tbank: #5a47ca;
   --p-gorkiy: #ff1c20;
-  --p-bimbook: #0a8754;
 }
 
-#tbank:hover {
-  background-color: var(--p-tbank);
+#balanceway:hover {
+  background-color: var(--p-balanceway);
 }
 
-#gorkiy:hover {
-  background-color: var(--p-gorkiy);
+#balanceway:hover h3,
+#balanceway:hover p {
+  color: var(--light-text);
+  transition: ease-in-out 0.5s;
+}
+
+#balanceway h3,
+#balanceway p {
+  transition: ease-in-out 0.35s;
+}
+
+#foresight:hover {
+  background-color: var(--p-foresight);
+}
+
+#dosug:hover {
+  background-color: var(--p-dosug);
 }
 
 #bimbook:hover {
   background-color: var(--p-bimbook);
+}
+
+/* #tbank:hover {
+  background-color: var(--p-tbank);
+} */
+
+/* #gorkiy:hover {
+  background-color: var(--p-gorkiy);
+} */
+
+/* Ссылки */
+
+:root {
+  --link-figma: #4dff00;
+  --link-hover-figma: #ff7940;
+  --link-github: #895bff;
+  --link-hover-github: #f897ff;
+}
+
+.figmaLink {
+  color: var(--link-figma);
+  transition: ease-in-out 0.15s;
+}
+
+.figmaLink:hover {
+  color: var(--link-hover-figma);
+  transition: ease-in-out 0.35s;
+}
+
+.githubLink {
+  color: var(--link-github);
+  transition: ease-in-out 0.15s;
+}
+
+.githubLink:hover {
+  color: var(--link-hover-github);
+  transition: ease-in-out 0.35s;
 }
 
 /* Шрифты */
@@ -289,7 +346,8 @@ h3 {
   font-weight: 500;
 }
 
-p {
+p,
+li {
   font-size: 1.5625vw;
   font-weight: 400;
   line-height: 110%;
@@ -298,12 +356,12 @@ p {
 a {
   font-size: 1.5vw;
   font-weight: 500;
-  color: var(--tlight-blue);
+  color: var(--tdark-blue);
   transition: ease-in-out 0.2s;
 }
 
 a:hover {
-  color: var(--tlight-lazure);
+  color: var(--tdark-yellow);
   transition: ease-in-out 0.3s;
 }
 
@@ -313,6 +371,7 @@ a:hover {
   position: fixed;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 50vw;
   padding: 4.5vw;
   gap: 3.125vw;
@@ -345,7 +404,7 @@ a:hover {
 .miniContents {
   display: flex;
   flex-direction: column;
-  gap: 2.083vw;
+  gap: 1vw;
 }
 
 /* Теги */
@@ -378,15 +437,26 @@ a:hover {
   cursor: pointer;
 }
 
-.project:hover {
+/* .project:hover {
   transition: ease-in-out 0.5s;
-  padding: 1.4vw;
+  /* padding: 1.4vw; 
+} */
+
+.project:hover .iconText,
+.project:hover p {
+  margin-left: 1vw;
+  transition: ease-in-out 0.5s;
+}
+
+.project .iconText,
+.project p {
+  transition: ease-in-out 0.35s;
 }
 
 .projectIcon {
   width: 3.125vw;
   height: 3.125vw;
-  border-radius: 0.6vw;
+  border-radius: 0.8vw;
 }
 
 .iconText {
@@ -403,14 +473,19 @@ a:hover {
 }
 
 .projectImage {
-  width: 13.5vw;
-  height: 13.5vw;
+  width: 100%;
+  height: 25vw;
   border-radius: 0.6vw;
+  background-size: auto;
 }
 
 #open {
   padding: 0.78vw;
   border-radius: 0.6vw;
+}
+
+#attention {
+  color: var(--tdark-orange);
 }
 
 /* Описание */

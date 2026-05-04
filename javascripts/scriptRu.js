@@ -1,13 +1,28 @@
 sendEmail()
 
 // Проекты
-tbank()
+projects()
 
-function tbank() {
-  let tbankOpen = document.querySelector('#tbank')
+function projects() {
+  let foresightOpen = document.querySelector('#foresight')
+  let balancewayOpen = document.querySelector('#balanceway')
+  let bimbookOpen = document.querySelector('#bimbook')
+  let dosugOpen = document.querySelector('#dosug')
 
-  tbankOpen.addEventListener('click', () => {
-    window.location.href = 'projectsRu/tbank.html'
+  foresightOpen.addEventListener('click', () => {
+    window.location.href = 'projectsRu/foresight.html'
+  })
+
+  balancewayOpen.addEventListener('click', () => {
+    window.location.href = 'projectsRu/balanceway.html'
+  })
+
+  bimbookOpen.addEventListener('click', () => {
+    window.location.href = 'projectsRu/bimbook.html'
+  })
+
+  dosugOpen.addEventListener('click', () => {
+    window.location.href = 'projectsRu/dosug.html'
   })
 }
 
